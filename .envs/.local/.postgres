@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=carboneros
+POSTGRES_USER=LCYSUEcJTuNTBwBnMsyaGVLqxUAEiZzu
+POSTGRES_PASSWORD=S51b2ZZo35yRQYNNbx04MmHUW3pf4XrECEI852sdN6HzmRvoEMXtWEPIplr2mJyi
