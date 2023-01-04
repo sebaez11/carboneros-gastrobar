@@ -1,0 +1,268 @@
+#store_page {
+    position: relative;
+    top: 64px;
+    overflow: auto;
+    background-color: white;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+
+
+    &::-webkit-scrollbar {
+        width: 12px !important;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #0D0D0D;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #A6610D;
+    }
+
+    .options-sidebar {
+        height: calc(100vh - 64px);
+        padding: 12px;
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+
+        .Title {
+            font-size: 48px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+
+            div {
+                width: 100%;
+                height: 6px;
+                background-color: #591902;
+                border-radius: 12px;
+            }
+        }
+
+        .categories {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow:
+                0 1px 1px hsl(0deg 0% 0% / 0.075),
+                0 2px 2px hsl(0deg 0% 0% / 0.075),
+                0 4px 4px hsl(0deg 0% 0% / 0.075),
+                0 8px 8px hsl(0deg 0% 0% / 0.075),
+                0 16px 16px hsl(0deg 0% 0% / 0.075);
+            padding: 12px;
+
+            .list-food-card {
+                height: 100%;
+                max-height: 100%;
+                overflow-y: scroll;
+                padding-right: 12px;
+
+                &::-webkit-scrollbar {
+                    width: 12px !important;
+                    margin-left: 12px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background-color: #591902;
+                    border-radius: 12px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 12px;
+                    background-color: #A6610D;
+                }
+
+                .food-card {
+                    width: 100%;
+                    border-radius: 6px;
+                    aspect-ratio: 3.24/1;
+                    margin-bottom: 12px;
+                    background-size: cover;
+                    background-position-y: center;
+                    overflow: hidden;
+                    cursor: pointer;
+                    box-shadow:
+                        0 1px 1px hsl(0deg 0% 0% / 0.075),
+                        0 2px 2px hsl(0deg 0% 0% / 0.075),
+                        0 4px 4px hsl(0deg 0% 0% / 0.075),
+                        0 8px 8px hsl(0deg 0% 0% / 0.075),
+                        0 16px 16px hsl(0deg 0% 0% / 0.075);
+
+                    div {
+                        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.95) 100%);
+                        height: 100%;
+                        display: flex;
+                        color: white;
+                        align-items: flex-end;
+                        padding: 12px;
+                        transition: 0.5s;
+
+                        span {
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    &:hover {
+                        div {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        height: calc(100vh - 64px);
+        padding-top: 12px;
+        padding-left: 12px;
+        font-family: 'Inter', sans-serif;
+        gap: 12px;
+
+        .search-bar {
+            height: 90px;
+            margin: 0;
+
+            .search-input {
+                position: relative;
+                padding: 0;
+                display: flex;
+                align-items: center;
+
+                input {
+                    height: 52px;
+                    border: 0;
+                    border-radius: 12px;
+                    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+                    box-shadow:
+                        0 1px 1px hsl(0deg 0% 0% / 0.075),
+                        0 2px 2px hsl(0deg 0% 0% / 0.075),
+                        0 4px 4px hsl(0deg 0% 0% / 0.075),
+                        0 8px 8px hsl(0deg 0% 0% / 0.075),
+                        0 16px 16px hsl(0deg 0% 0% / 0.075);
+                    padding: 16px;
+                    width: 100%;
+                    padding-left: 44px;
+                    font-weight: 300;
+
+                    &:focus {
+                        box-shadow:
+                            0 1px 1px hsl(0deg 0% 0% / 0.075),
+                            0 2px 2px hsl(0deg 0% 0% / 0.075),
+                            0 4px 4px hsl(0deg 0% 0% / 0.075),
+                            0 8px 8px hsl(0deg 0% 0% / 0.075),
+                            0 16px 16px hsl(0deg 0% 0% / 0.075) !important;
+                    }
+                }
+
+                ion-icon {
+                    font-size: 20px;
+                    height: 20px;
+                    width: 20px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    opacity: 0.5;
+                    left: 12px;
+                }
+            }
+        }
+
+        .food-content {
+            height: calc(100% - 90px);
+            margin: 0;
+            overflow-y: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-rows: 100px;
+            grid-gap: 12px;
+            padding: 12px;
+
+            &::-webkit-scrollbar {
+                width: 12px !important;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: #591902;
+                border-radius: 12px;
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 12px;
+                background-color: #A6610D;
+            }
+
+            .food-card {
+                height: 100px;
+                border-radius: 12px;
+                background-color: white;
+                box-sizing: border-box;
+                transition: 0.5s;
+                display: flex;
+                gap: 12px;
+                flex-direction: row;
+                padding: 12px;
+                cursor: pointer;
+                box-shadow:
+                    0 1px 1px hsl(0deg 0% 0% / 0.075),
+                    0 2px 2px hsl(0deg 0% 0% / 0.075),
+                    0 4px 4px hsl(0deg 0% 0% / 0.075),
+                    0 8px 8px hsl(0deg 0% 0% / 0.075),
+                    0 16px 16px hsl(0deg 0% 0% / 0.075);
+
+                .food-image {
+                    width: 76px;
+                    min-width: 76px;
+                    border-radius: 6px;
+                    background-size: cover;
+
+                }
+
+                .food-text {
+                    width: calc(100% - 88px);
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 100%;
+                    justify-content: space-between;
+
+                    .title {
+                        font-size: 18px;
+                        font-weight: 400;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: pre;
+                    }
+
+                    .descripcion {
+                        width: 100%;
+                        font-size: 12px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: pre;
+                        color: #6a696e;
+                    }
+
+                    .precio {
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,74 @@
+{
+    "comidas": [
+        {
+            "nombre": "Pizza margarita",
+            "descripcion": "Una deliciosa pizza con salsa de tomate, queso mozzarella y albahaca fresca",
+            "precio": 10.99,
+            "imagen": "https://example.com/pizza.jpg",
+            "categorias": [
+                "Pizzas",
+                "Entrantes"
+            ]
+        },
+        {
+            "nombre": "Sopa de pollo",
+            "descripcion": "Una sopa casera con pollo, verduras y arroz",
+            "precio": 5.49,
+            "imagen": "https://example.com/sopa.jpg",
+            "categorias": [
+                "Sopas",
+                "Entrantes"
+            ]
+        },
+        {
+            "nombre": "Ensalada César",
+            "descripcion": "Una ensalada fresca con lechuga romana, pollo a la parrilla y salsa César",
+            "precio": 7.99,
+            "imagen": "https://example.com/ensalada.jpg",
+            "categorias": [
+                "Ensaladas",
+                "Entrantes"
+            ]
+        },
+        {
+            "nombre": "Filete de ternera",
+            "descripcion": "Un filete de ternera a la parrilla con patatas fritas y ensalada",
+            "precio": 15.99,
+            "imagen": "https://example.com/filete.jpg",
+            "categorias": [
+                "Carnes",
+                "Platos principales"
+            ]
+        },
+        {
+            "nombre": "Pollo al curry",
+            "descripcion": "Pollo en salsa de curry con arroz basmati y verduras salteadas",
+            "precio": 11.99,
+            "imagen": "https://example.com/pollo-curry.jpg",
+            "categorias": [
+                "Carnes",
+                "Platos principales"
+            ]
+        },
+        {
+            "nombre": "Lasaña de verduras",
+            "descripcion": "Una lasaña de verduras con salsa de tomate y queso mozzarella",
+            "precio": 9.99,
+            "imagen": "https://example.com/lasagna.jpg",
+            "categorias": [
+                "Vegetariano",
+                "Platos principales"
+            ]
+        },
+        {
+            "nombre": "Arroz frito tailandés",
+            "descripcion": "Arroz frito tailandés con pollo, verduras y salsa de cacahuete",
+            "precio": 10.99,
+            "imagen": "https://example.com/arroz-frito.jpg",
+            "categorias": [
+                "Oriental",
+                "Platos principales"
+            ]
+        }
+    ]
+}
