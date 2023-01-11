@@ -55,6 +55,8 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "carboneros.products.apps.ProductsAppConfig",
+    "carboneros.payments.apps.PaymentsAppConfig",
+    "carboneros.deliveries.apps.DeliveriesAppConfig",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
