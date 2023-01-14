@@ -9,7 +9,11 @@ urlpatterns = [
 
     path(
         'products/', 
-        include('products.urls')
+        include(('products.urls', 'other_name_for_products'), namespace='products'),
+    ),
+    path(
+        'payments/', 
+        include('payments.urls')
     ),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
