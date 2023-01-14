@@ -7,7 +7,8 @@ import { useSelector } from 'react-redux'
 
 import Home from './pages/Home/Home'
 import Store from './pages/Store/Store'
-
+import Pay from './pages/Pay/Pay'
+import Contact from './pages/Contact/Contact'
 /*Componentes */
 import NavBar from './components/NavBar'
 import ShoppingCart from './components/ShoppingCart'
@@ -23,6 +24,8 @@ export default function App() {
       <NavBar />
       {navigationStore.actualPage === 'HOME' && (<Home />)}
       {navigationStore.actualPage === 'STORE' && (<Store />)}
+      {navigationStore.actualPage === 'PAY' && (<Pay />)}
+      {navigationStore.actualPage === 'CONTACT' && (<Contact />)}
       {shoppingCartStore && (<ShoppingCart />)}
       {shopStore && (<FoodDetails />)}
     </>

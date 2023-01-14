@@ -23,7 +23,7 @@ export default function NavBar() {
         <ul>
           <li onClick={() => { executeDispatch("CHANGE_WINDOW", "HOME") }}>Inicio</li>
           <li>¿Quienes Somos?</li>
-          <li>Contacto</li>
+          <li onClick={() => { executeDispatch("CHANGE_WINDOW", "CONTACT") }}>Contacto</li>
         </ul>
       </div>
       <div className="shop" onClick={() => { executeDispatch("TOOGLE_SHOPPINGCART_WINDOW", true) }}>
