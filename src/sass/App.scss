@@ -8,7 +8,6 @@ $black_04dp: #272727;
 $black_06dp: #2c2c2c;
 $black_12dp: #2d2d2d;
 $black_16dp: #353535;
-
 $black_24dp: #373737;
 /* Color Theme Swatches in Hex */
 $CarbonerosTheme-1-hex: #A6610D;
@@ -20,6 +19,8 @@ $CarbonerosTheme-5-hex: #0D0D0D;
 @import url('https://fonts.cdnfonts.com/css/inter');
 @import url(../pages/Home/Home.scss);
 @import url(../pages/Store/Store.scss);
+@import url(../pages/Pay/Pay.scss);
+@import url(../pages/Contact/Contact.scss);
 
 body {
   background-color: white;
@@ -82,6 +83,7 @@ body {
       flex-direction: column;
       gap: 12px;
       height: 100%;
+
       .food-photo {
         aspect-ratio: 16/9;
         border-radius: 0 0 12px 12px;
@@ -105,7 +107,8 @@ body {
         white-space: pre;
       }
 
-      .description,.precio {
+      .description,
+      .precio {
         display: flex;
         padding: 0 12px;
         gap: 12px;
@@ -123,7 +126,7 @@ body {
         }
       }
 
-      .precio span{
+      .precio span {
         color: #0D0D0D;
         font-weight: bold;
       }
@@ -137,7 +140,8 @@ body {
       color: white;
       gap: 12px;
       align-items: center;
-      padding-right:12px ;
+      padding-right: 12px;
+
       .btn-trash {
         display: flex;
         align-items: center;
@@ -147,6 +151,7 @@ body {
         font-size: 26px;
         height: 26px;
       }
+
 
       div.btn-final {
         background-color: #29d884;
@@ -181,6 +186,16 @@ body {
   padding: 0;
   justify-content: flex-end;
 
+  .transition {
+    height: 100vh;
+    width: 480px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    transition: 0.5s;
+  }
+
   .main {
     background-color: white;
     min-width: 480px;
@@ -190,6 +205,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    height: 100%;
+    max-height: 100%;
+    transition: 0.5s;
 
     .btn-close {
       position: absolute;
@@ -203,6 +221,12 @@ body {
       font-size: 24px;
       font-weight: 600;
 
+      span {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
       div {
         width: 100%;
         height: 6px;
@@ -213,16 +237,104 @@ body {
 
     .food-list {
       height: 100%;
+      flex-direction: column;
+      max-height: 100%;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 12px !important;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 12px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 12px;
+        background-color: #A6610D;
+      }
+
+      .food-card {
+        padding: 12px;
+        border-bottom: 1px solid #D3D3D3;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+
+        .food-image {
+          width: 76px;
+          min-width: 76px;
+          border-radius: 6px;
+          background-size: cover;
+        }
+
+        .details {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          .name {
+            font-size: 14px;
+            font-weight: 400;
+          }
+
+          .price {
+            font-size: 12px;
+            font-weight: 800;
+          }
+        }
+
+        .controls {
+          width: 102px;
+          min-width: 102px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+
+          .btn-modify {
+            height: 42px;
+            border-radius: 12px;
+            border: 1px solid #D3D3D3;
+            display: flex;
+            flex-direction: row;
+            padding: 8px;
+            justify-content: space-between;
+
+            .units {
+              width: 24px;
+              height: 24px;
+              font-style: 14px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: default;
+            }
+
+            .buttons-control {
+              cursor: pointer;
+              width: 24px;
+              height: 24px;
+
+              ion-icon {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
     }
 
     .btn-go-to-pay {
       height: 60px;
-      font-size: 20px;
       display: flex;
       justify-content: flex-end;
       color: white;
       gap: 12px;
       align-items: center;
+      padding: 16px;
 
       .btn-trash {
         display: flex;
@@ -230,19 +342,41 @@ body {
         justify-content: center;
         cursor: pointer;
         color: #121212;
-        font-size: 26px;
-        height: 26px;
+        font-size: 24px;
+        height: 24px;
       }
 
       div.btn-final {
         background-color: #29d884;
         cursor: pointer;
         height: 52px;
-        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
         padding: 12px 24px;
         border-radius: 8px;
         font-weight: 600;
         transition: 0.5s;
+
+        &.disabled {
+          opacity: 0.5;
+        }
+
+        .span-go-to-pay {
+          font-size: 16px;
+          font-weight: 800;
+        }
+
+        .subtotal {
+          font-size: 16px;
+          font-weight: 400;
+
+          span {
+            font-weight: 800;
+          }
+        }
 
         &:hover {
           background-color: #29d884;

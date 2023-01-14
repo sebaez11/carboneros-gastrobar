@@ -3,7 +3,7 @@
         {
             "nombre": "Pizza margarita",
             "descripcion": "Una deliciosa pizza con salsa de tomate, queso mozzarella y albahaca fresca",
-            "precio": 10.99,
+            "precio": 10990,
             "imagen": "https://example.com/pizza.jpg",
             "categorias": [
                 "Pizzas",
@@ -13,7 +13,7 @@
         {
             "nombre": "Sopa de pollo",
             "descripcion": "Una sopa casera con pollo, verduras y arroz",
-            "precio": 5.49,
+            "precio": 15490,
             "imagen": "https://example.com/sopa.jpg",
             "categorias": [
                 "Sopas",
@@ -23,7 +23,7 @@
         {
             "nombre": "Ensalada César",
             "descripcion": "Una ensalada fresca con lechuga romana, pollo a la parrilla y salsa César",
-            "precio": 7.99,
+            "precio": 17990,
             "imagen": "https://example.com/ensalada.jpg",
             "categorias": [
                 "Ensaladas",
@@ -33,7 +33,7 @@
         {
             "nombre": "Filete de ternera",
             "descripcion": "Un filete de ternera a la parrilla con patatas fritas y ensalada",
-            "precio": 15.99,
+            "precio": 15990,
             "imagen": "https://example.com/filete.jpg",
             "categorias": [
                 "Carnes",
@@ -43,7 +43,7 @@
         {
             "nombre": "Pollo al curry",
             "descripcion": "Pollo en salsa de curry con arroz basmati y verduras salteadas",
-            "precio": 11.99,
+            "precio": 11990,
             "imagen": "https://example.com/pollo-curry.jpg",
             "categorias": [
                 "Carnes",
@@ -53,7 +53,7 @@
         {
             "nombre": "Lasaña de verduras",
             "descripcion": "Una lasaña de verduras con salsa de tomate y queso mozzarella",
-            "precio": 9.99,
+            "precio": 9990,
             "imagen": "https://example.com/lasagna.jpg",
             "categorias": [
                 "Vegetariano",
@@ -63,10 +63,50 @@
         {
             "nombre": "Arroz frito tailandés",
             "descripcion": "Arroz frito tailandés con pollo, verduras y salsa de cacahuete",
-            "precio": 10.99,
+            "precio": 10990,
             "imagen": "https://example.com/arroz-frito.jpg",
             "categorias": [
                 "Oriental",
+                "Platos principales"
+            ]
+        },
+        {
+            "nombre": "Espaguetis a la carbonara",
+            "descripcion": "Un plato clásico de espaguetis con salsa de huevo, panceta y queso parmesano",
+            "precio": 12500,
+            "imagen": "https://example.com/carbonara.jpg",
+            "categorias": [
+                "Pasta",
+                "Platos principales"
+            ]
+        },
+        {
+            "nombre": "Ensalada César",
+            "descripcion": "Una ensalada con lechuga romana, pollo a la parrilla, crotones y salsa César",
+            "precio": 9990,
+            "imagen": "https://example.com/cesar.jpg",
+            "categorias": [
+                "Ensaladas",
+                "Entrantes"
+            ]
+        },
+        {
+            "nombre": "Hamburguesa con queso",
+            "descripcion": "Una hamburguesa de carne de ternera con queso cheddar y verduras frescas",
+            "precio": 11500,
+            "imagen": "https://example.com/hamburgesa.jpg",
+            "categorias": [
+                "Hamburguesas",
+                "Platos principales"
+            ]
+        },
+        {
+            "nombre": "Costillas de cerdo a la barbacoa",
+            "descripcion": "Costillas de cerdo marinadas en salsa barbacoa y a la parrilla",
+            "precio": 16990,
+            "imagen": "https://example.com/costillas.jpg",
+            "categorias": [
+                "Carnes",
                 "Platos principales"
             ]
         }

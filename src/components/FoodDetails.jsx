@@ -24,7 +24,7 @@ export default function FoodDetails() {
     function addToCart(){
         ele.current.style.opacity = 0;
         setTimeout(() => {
-            executeDispatch("ADD_OBJECT_TO_SHOPPINGCART",{...data,units:1});
+            executeDispatch("UPDATE_OBJECT_TO_SHOPPINGCART",{...data,units:1,action:"ADD"});
             executeDispatch("TOOGLE_FOODDETAILS_WINDOW", null);
         }, 500);
     }
@@ -62,9 +62,6 @@ export default function FoodDetails() {
                     </div>
                 </div>
                 <div className="btn-add-to-cart">
-                    <div className="btn-trash">
-                        <ion-icon name="trash-outline"></ion-icon>
-                    </div>
                     <div className="btn-final" onClick={()=>(addToCart())}>
                         Añadir al carrito
                     </div>
