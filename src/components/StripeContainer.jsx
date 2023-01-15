@@ -5,7 +5,7 @@ import CheckoutForm from './CheckoutForm';
 import { useSelector,useDispatch } from 'react-redux'
 
 import Loader from './Loader';
-const stripePromise = loadStripe('pk_test_51MN2hQAPDkzv4u2cOlsrqNna3GPah2BluUg4sn60ndolZjeY2KTH911LOFzscZOlw31WTDvwTaaLnOezMe5Ricbe00C1rBnsbQ');
+const stripePromise = loadStripe('pk_test_51MP5RBCoqsP9nmU79JWcST21pVat2K0WNhY53HeakphZoU4bL7CzZcksxPIsHoTKOQFQfo9iongSJB3X7j8KuVeJ002KNy3Dk4');
 
 export default function StripeContainer() {
     const [clientSecret, setClientSecret] = useState("");
