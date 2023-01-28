@@ -1,8 +1,22 @@
 import React from 'react'
 import bg from '../../Assets/images/Contact/contact_bg.jpg'
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 export default function Contact() {
+    const SimpleForm = () => <MailchimpSubscribe url={url} />
 
+    const CustomForm = ({ status, message, onValidated }) => {
+        let email, name;
+        const submit = () =>
+            email &&
+            name &&
+            email.value.indexOf("@") > -1 &&
+            onValidated({
+                EMAIL: email.value,
+                NAME: name.value
+            });
+    }
+    const url = "https://carbonerossparrilla.us21.list-manage.com/subscribe/post?u=5362315272762b6e758772920&amp;id=45995b57a8&amp;f_id=0098eae1f0";
     return (
         <div id='Contact_Page' className='row'>
             <div id="bg_wallpaper" style={{ backgroundImage: 'url(' + bg + ')' }}>
@@ -58,11 +72,22 @@ export default function Contact() {
                         Correo:
                         <span>
                             carbonerossparrilla@gmail.com
-
                         </span>
                     </span>
+                    <span className="title">
+                        Subscripcion
+                    </span>
+                    <span>
+                        <span>
+                            ¿Qué esperas para unirte a nuestra familia de amantes de la buena comida? ¡Suscribete hoy y comienza a disfrutar de las mejores ofertas!
+                        </span>
+                    </span>
+                    <a href="http://eepurl.com/ijpwXr">
+                        <div className="mailchimp">
+                            <span>¡Suscribete aqui mismo!</span>
+                        </div>
+                    </a>
                 </div>
-
             </div>
         </div>
     )
