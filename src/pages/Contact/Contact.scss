@@ -13,7 +13,8 @@
         flex-direction: column;
         gap: 24px;
         color: white;
-
+        padding-top: 76px;
+        padding-bottom: 12px;
         .title {
             color: #F2B05E;
         }
@@ -74,7 +75,7 @@
             .mailchimp {
                 border-radius: 12px;
                 padding: 18px 32px;
-                background-color: #F2B05E;
+                background-color: #A6610D;
                 color: white;
                 display: flex;
                 align-items: center;
