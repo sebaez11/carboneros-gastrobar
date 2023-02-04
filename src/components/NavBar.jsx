@@ -15,14 +15,14 @@ export default function NavBar() {
   }
 
   return (
-    <div id='NavBar' className={navigationStore === "STORE" && 'expand'} >
-      <div className="name">
-        <span>CARBONEROSS</span>
+    <div id='NavBar' className={navigationStore === "STORE" ? ('expand'):(null)} >
+      <div className="name" onClick={() => { executeDispatch("CHANGE_WINDOW", "HOME") }}>
+        <span >CARBONEROSS</span>
       </div>
       <div className="pages">
         <ul>
           <li onClick={() => { executeDispatch("CHANGE_WINDOW", "HOME") }}>Inicio</li>
-          <li>¿Quienes Somos?</li>
+          <li onClick={() => { executeDispatch("CHANGE_WINDOW", "WEARE") }}>¿Quienes Somos?</li>
           <li onClick={() => { executeDispatch("CHANGE_WINDOW", "CONTACT") }}>Contacto</li>
         </ul>
       </div>

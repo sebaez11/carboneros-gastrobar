@@ -21,6 +21,7 @@ $CarbonerosTheme-5-hex: #0D0D0D;
 @import url(../pages/Store/Store.scss);
 @import url(../pages/Pay/Pay.scss);
 @import url(../pages/Contact/Contact.scss);
+@import url(../pages//Weare/Weare.scss);
 
 body {
   background-color: white;
@@ -429,6 +430,7 @@ body {
     width: 40px;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .pages {

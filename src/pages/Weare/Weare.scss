@@ -1,0 +1,31 @@
+#weare_page{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0D0D0D;
+    font-family: 'Inter', sans-serif;
+    .imageWallpaper{
+        background-size: cover;
+        background-position-x:center;
+        background-position-y:center;
+        min-height: 400px;
+    }
+    .textColumn{
+        padding: 24px;
+        padding-top: 64px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+        .title{
+            font-size: 48px;
+            margin-bottom: 48px;
+            font-weight: bold;
+            color: #A6610D;
+        }
+        .content{
+            text-align: justify;
+            color: white;
+        }
+    }
+}

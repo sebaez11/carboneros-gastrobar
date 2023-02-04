@@ -13,6 +13,7 @@ import Contact from './pages/Contact/Contact'
 import NavBar from './components/NavBar'
 import ShoppingCart from './components/ShoppingCart'
 import FoodDetails from './components/FoodDetails'
+import Weare from './pages/Weare/Weare'
 
 export default function App() {
   const navigationStore = useSelector(store => store.navigation);
@@ -24,6 +25,7 @@ export default function App() {
       <NavBar />
       {navigationStore.actualPage === 'HOME' && (<Home />)}
       {navigationStore.actualPage === 'STORE' && (<Store />)}
+      {navigationStore.actualPage === 'WEARE' && (<Weare />)}
       {navigationStore.actualPage === 'PAY' && (<Pay />)}
       {navigationStore.actualPage === 'CONTACT' && (<Contact />)}
       {shoppingCartStore && (<ShoppingCart />)}

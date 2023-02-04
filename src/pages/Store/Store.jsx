@@ -39,7 +39,7 @@ export default function Store({ navBar }) {
             executeDispatch("UPDATE_SHOP_DATA", response.comidas);
         });
     }, [])
-
+    
     return (
         <div id="store_page" className='row'>
             <div className="col-md-3 options-sidebar">
