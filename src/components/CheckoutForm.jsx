@@ -15,6 +15,7 @@ export default function CheckoutForm({ clientSecret }) {
             elements,
             confirmParams: {
                 return_url: "http://localhost:3000",
+                receipt_email:"marlesandres1@gmail.com"
             },
             redirect: 'if_required'
         });

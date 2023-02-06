@@ -1,114 +1,434 @@
 {
     "comidas": [
         {
-            "nombre": "Pizza margarita",
-            "descripcion": "Una deliciosa pizza con salsa de tomate, queso mozzarella y albahaca fresca",
-            "precio": 10990,
-            "imagen": "https://example.com/pizza.jpg",
+            "nombre": "Dorado Frito",
+            "descripcion": "Arroz, Ensalada y Patacón",
+            "precio": 30000,
+            "imagen": "",
             "categorias": [
-                "Pizzas",
-                "Entrantes"
+                "Pescado"
             ]
         },
+
         {
-            "nombre": "Sopa de pollo",
-            "descripcion": "Una sopa casera con pollo, verduras y arroz",
-            "precio": 15490,
-            "imagen": "https://example.com/sopa.jpg",
+            "nombre": "Amarillo a la monseñor",
+            "descripcion": "Arroz, Ensalada y Patacón",
+            "precio": 33000,
+            "imagen": "",
             "categorias": [
-                "Sopas",
-                "Entrantes"
+                "Pescado"
             ]
         },
+
         {
-            "nombre": "Ensalada César",
-            "descripcion": "Una ensalada fresca con lechuga romana, pollo a la parrilla y salsa César",
-            "precio": 17990,
-            "imagen": "https://example.com/ensalada.jpg",
+            "nombre": "Mojarra Frita",
+            "descripcion": "Arroz, Ensalada y Patacón",
+            "precio": 30000,
+            "imagen": "",
             "categorias": [
-                "Ensaladas",
-                "Entrantes"
+                "Pescado"
             ]
         },
+
         {
-            "nombre": "Filete de ternera",
-            "descripcion": "Un filete de ternera a la parrilla con patatas fritas y ensalada",
-            "precio": 15990,
-            "imagen": "https://example.com/filete.jpg",
+            "nombre": "Carne de res",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 19000,
+            "imagen": "",
             "categorias": [
-                "Carnes",
-                "Platos principales"
+                "Carne a la parrilla"
             ]
         },
+	
         {
-            "nombre": "Pollo al curry",
-            "descripcion": "Pollo en salsa de curry con arroz basmati y verduras salteadas",
-            "precio": 11990,
-            "imagen": "https://example.com/pollo-curry.jpg",
+            "nombre": "Punta de Anca",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 30000,
+            "imagen": "",
             "categorias": [
-                "Carnes",
-                "Platos principales"
+                "Carne a la parrilla"
             ]
         },
-        {
-            "nombre": "Lasaña de verduras",
-            "descripcion": "Una lasaña de verduras con salsa de tomate y queso mozzarella",
-            "precio": 9990,
-            "imagen": "https://example.com/lasagna.jpg",
+
+	  {
+            "nombre": "Mixta res y costillas de cerdo",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 22000,
+            "imagen": "",
             "categorias": [
-                "Vegetariano",
-                "Platos principales"
+                "Carne a la parrilla"
             ]
         },
-        {
-            "nombre": "Arroz frito tailandés",
-            "descripcion": "Arroz frito tailandés con pollo, verduras y salsa de cacahuete",
-            "precio": 10990,
-            "imagen": "https://example.com/arroz-frito.jpg",
+
+	  {
+            "nombre": "Churrasco",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 27000,
+            "imagen": "",
             "categorias": [
-                "Oriental",
-                "Platos principales"
+                "Carne a la parrilla"
             ]
         },
-        {
-            "nombre": "Espaguetis a la carbonara",
-            "descripcion": "Un plato clásico de espaguetis con salsa de huevo, panceta y queso parmesano",
-            "precio": 12500,
-            "imagen": "https://example.com/carbonara.jpg",
+
+	  {
+            "nombre": "Picada",
+            "descripcion": "Carne de res, cerdo, pollo, salchichas, queso, tomate, papas a la francesa, y platanitos",
+            "precio": 42000,
+            "imagen": "",
             "categorias": [
-                "Pasta",
-                "Platos principales"
+                "Otros"
             ]
         },
-        {
-            "nombre": "Ensalada César",
-            "descripcion": "Una ensalada con lechuga romana, pollo a la parrilla, crotones y salsa César",
-            "precio": 9990,
-            "imagen": "https://example.com/cesar.jpg",
+
+	  {
+            "nombre": "Bandeja paisa",
+            "descripcion": "Frijoles, arroz, carne molida, chicharron, chorizo, aguacate",
+            "precio": 22000,
+            "imagen": "",
             "categorias": [
-                "Ensaladas",
-                "Entrantes"
+                "Otros"
             ]
         },
-        {
-            "nombre": "Hamburguesa con queso",
-            "descripcion": "Una hamburguesa de carne de ternera con queso cheddar y verduras frescas",
-            "precio": 11500,
-            "imagen": "https://example.com/hamburgesa.jpg",
+
+	  {
+            "nombre": "Frijolada",
+            "descripcion": "Frijoles, arroz, chicharron, chorizo, aguacate",
+            "precio": 16500,
+            "imagen": "",
             "categorias": [
-                "Hamburguesas",
-                "Platos principales"
+                "Otros"
             ]
         },
-        {
-            "nombre": "Costillas de cerdo a la barbacoa",
-            "descripcion": "Costillas de cerdo marinadas en salsa barbacoa y a la parrilla",
-            "precio": 16990,
-            "imagen": "https://example.com/costillas.jpg",
+
+	  {
+            "nombre": "Menu infantil",
+            "descripcion": "Plato fuerte infantil",
+            "precio": 16000,
+            "imagen": "",
             "categorias": [
-                "Carnes",
-                "Platos principales"
+                "Otros"
+            ]
+        },
+
+	  {
+            "nombre": "Sobrebarriga a la parrilla",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 28000,
+            "imagen": "",
+            "categorias": [
+                "Especiales"
+            ]
+        },
+
+	  {
+            "nombre": "Sobrebarriga en salsa",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 28000,
+            "imagen": "",
+            "categorias": [
+                "Especiales"
+            ]
+        },
+
+	  {
+            "nombre": "Lengua en salsa",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 28000,
+            "imagen": "",
+            "categorias": [
+                "Especiales"
+            ]
+        },
+
+	  {
+            "nombre": "Refajo carboneross",
+            "descripcion": "Refrescante",
+            "precio": 15000,
+            "imagen": "",
+            "categorias": [
+                "Bebidas"
+            ]
+        },
+
+	  {
+            "nombre": "Limonada jarra",
+            "descripcion": "Bebida con hielo",
+            "precio": 10000,
+            "imagen": "",
+            "categorias": [
+                "Bebidas"
+            ]
+        },
+
+	  {
+            "nombre": "Limonada 1/2 jarra",
+            "descripcion": "Bebida con hielo",
+            "precio": 8000,
+            "imagen": "",
+            "categorias": [
+                "Bebidas"
+            ]
+        },
+
+	  {
+            "nombre": "Citrica en soda",
+            "descripcion": "Bebida con hielo",
+            "precio": 6000,
+            "imagen": "",
+            "categorias": [
+                "Bebidas"
+            ]
+        },
+
+	  {
+            "nombre": "Citrica",
+            "descripcion": "Bebida con hielo",
+            "precio": 5000,
+            "imagen": "",
+            "categorias": [
+                "Bebidas"
+            ]
+        },
+
+	  {
+            "nombre": "Jugos en leche",
+            "descripcion": "Bebida con hielo",
+            "precio": 6000,
+            "imagen": "",
+            "categorias": [
+                "Bebidas"
+            ]
+        },
+
+	  {
+            "nombre": "Jugos en agua",
+            "descripcion": "Bebida con hielo",
+            "precio": 5000,
+            "imagen": "",
+            "categorias": [
+                "Bebidas"
+            ]
+        },
+
+	  {
+            "nombre": "Agua en botella",
+            "descripcion": "Refrescante",
+            "precio": 3500,
+            "imagen": "",
+            "categorias": [
+                "Bebidas"
+            ]
+        },
+
+	  {
+            "nombre": "Gaseosa 400 ml",
+            "descripcion": "Bebida con hielo",
+            "precio": 4000,
+            "imagen": "",
+            "categorias": [
+                "Bebidas"
+            ]
+        },
+
+	  {
+            "nombre": "Crema de pollo",
+            "descripcion": "Porción de arroz",
+            "precio": 9000,
+            "imagen": "",
+            "categorias": [
+                "Cremas"
+            ]
+        },
+
+	  {
+            "nombre": "Crema de champiñones",
+            "descripcion": "Porción de arroz",
+            "precio": 10000,
+            "imagen": "",
+            "categorias": [
+                "Cremas"
+            ]
+        },
+
+	  {
+            "nombre": "Crema de tomate",
+            "descripcion": "Porción de arroz",
+            "precio": 8000,
+            "imagen": "",
+            "categorias": [
+                "Cremas"
+            ]
+        },
+
+	  {
+            "nombre": "Res, cerdo, pollo",
+            "descripcion": "Porcion",
+            "precio": 8000,
+            "imagen": "",
+            "categorias": [
+                "Adicionales"
+            ]
+        },
+
+	  {
+            "nombre": "Chicharron",
+            "descripcion": "Porcion",
+            "precio": 9000,
+            "imagen": "",
+            "categorias": [
+                "Adicionales"
+            ]
+        },
+
+	  {
+            "nombre": "Papa a la francesa",
+            "descripcion": "Porcion",
+            "precio": 7000,
+            "imagen": "",
+            "categorias": [
+                "Adicionales"
+            ]
+        },
+    
+	  {
+            "nombre": "Papa criolla",
+            "descripcion": "Porcion",
+            "precio": 5000,
+            "imagen": "",
+            "categorias": [
+                "Adicionales"
+            ]
+        },
+
+	  {
+            "nombre": "Arroz",
+            "descripcion": "Porcion",
+            "precio": 4000,
+            "imagen": "",
+            "categorias": [
+                "Adicionales"
+            ]
+        },
+
+	  {
+            "nombre": "Ensaladas",
+            "descripcion": "Porcion",
+            "precio": 5000,
+            "imagen": "",
+            "categorias": [
+                "Adicionales"
+            ]
+        },
+
+	  {
+            "nombre": "Patacón con hogao",
+            "descripcion": "Delicioso patacón de la casa",
+            "precio": 5500,
+            "imagen": "",
+            "categorias": [
+                "Entradas"
+            ]
+        },
+
+	  {
+            "nombre": "Patacón Gratinado",
+            "descripcion": "Delicioso patacón de la casa",
+            "precio": 7000,
+            "imagen": "",
+            "categorias": [
+                "Entradas"
+            ]
+        },
+
+	  {
+            "nombre": "Chorizo con arepa",
+            "descripcion": "Preparado a la parrilla",
+            "precio": 8000,
+            "imagen": "",
+            "categorias": [
+                "Entradas"
+            ]
+        },
+
+	  {
+            "nombre": "Lomo de cerdo a la parrilla",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 21000,
+            "imagen": "",
+            "categorias": [
+                "Cerdo"
+            ]
+        },
+
+	  {
+            "nombre": "Lomo de cerdo gratinado",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 24000,
+            "imagen": "",
+            "categorias": [
+                "Cerdo"
+            ]
+        },
+
+	  {
+            "nombre": "Lomo de cerdo en salsa de fruta",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 24000,
+            "imagen": "",
+            "categorias": [
+                "Cerdo"
+            ]
+        },
+
+	  {
+            "nombre": "Costillas de cerdo en salsa BBQ",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 29000,
+            "imagen": "",
+            "categorias": [
+                "Cerdo"
+            ]
+        },
+
+	  {
+            "nombre": "Pechuga gratinada en salsa de champiñones",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 25000,
+            "imagen": "",
+            "categorias": [
+                "Pollo"
+            ]
+        },
+
+	  {
+            "nombre": "Pechuga a la parrilla",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 21000,
+            "imagen": "",
+            "categorias": [
+                "Pollo"
+            ]
+        },
+
+	  {
+            "nombre": "Pechuga napolitana",
+            "descripcion": "Ensalada y papa a la francesa",
+            "precio": 23000,
+            "imagen": "",
+            "categorias": [
+                "Pollo"
+            ]
+        },
+
+	  {
+            "nombre": "Alitas BBQ",
+            "descripcion": "Papa a la francesa",
+            "precio": 19000,
+            "imagen": "",
+            "categorias": [
+                "Pollo"
             ]
         }
-    ]
+
+    ]    
 }
